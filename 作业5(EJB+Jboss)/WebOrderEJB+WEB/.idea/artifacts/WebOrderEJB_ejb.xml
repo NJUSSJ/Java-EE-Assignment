@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="WebOrderEJB:ejb">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebOrderEJB_ejb</output-path>
+    <root id="archive" name="WebOrderEJB_ejb.jar">
+      <element id="artifact" artifact-name="WebOrderEJB:ejb exploded" />
+    </root>
+  </artifact>
+</component>
