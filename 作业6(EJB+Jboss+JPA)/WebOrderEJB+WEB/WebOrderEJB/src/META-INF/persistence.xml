@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="webOrderJPA">
+        <jta-data-source>java:/MySqlDS</jta-data-source>
+        <properties>
+            <property name="showSql" value="true" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+        </properties>
+    </persistence-unit>
+</persistence>
