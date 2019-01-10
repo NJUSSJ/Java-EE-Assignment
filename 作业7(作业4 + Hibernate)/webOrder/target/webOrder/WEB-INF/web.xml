@@ -1,0 +1,84 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>EncodeFilter</filter-name>
+    <display-name>EncodeFilter</display-name>
+    <filter-class>edu.nju.onlineorder.filter.EncodeFilter</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>StatisticFilter</filter-name>
+    <display-name>StatisticFilter</display-name>
+    <filter-class>edu.nju.onlineorder.filter.StasticFilter</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <display-name>LoginFilter</display-name>
+    <filter-class>edu.nju.onlineorder.filter.LoginFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/Order</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/Place</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/order/order.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/order/orderResult.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/login/login.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/visit/visit.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/login/login.jsp</url-pattern>
+  </filter-mapping>
+
+
+
+  <filter-mapping>
+    <filter-name>StatisticFilter</filter-name>
+    <url-pattern>/visit/visit.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>StatisticFilter</filter-name>
+    <url-pattern>/login/login.jsp</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>StatisticFilter</filter-name>
+    <url-pattern>/order/order.jsp</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>StatisticFilter</filter-name>
+    <url-pattern>/order/orderResult.jsp</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+
+
+</web-app>
