@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Order</title>
+</head>
+<body>
+<table width="650" border="0" >
+    <tr>
+        <td width="650" height="80" background="../image/top.jpg">&nbsp;</td>
+    </tr>
+</table>
+
+<p style="color: red">错误的用户名或密码！</p>
+
+<form action="../Order" method="POST">
+    <table>
+        <tr><td>用户名:</td><td><INPUT type="text" name="login" /></td></tr>
+        <tr><td>密码:</td><td><INPUT type="password" name="password"/></td></tr>
+        <tr><td><INPUT type="submit" value="登录"></td><td><input type="reset" value="重置"></td></tr>
+    </table>
+</form>
+
+<form action="../visit/visit.jsp" method="post">
+    <input type="submit" name="visit" value="游客访问">
+</form>
+</body>
+</html>

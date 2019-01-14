@@ -1,0 +1,5 @@
+<Context>
+    <Resource name = "jdbc/onlinestock" auth = "Container" type = "javax.sql.DataSource"
+              maxTotal = "50" maxIdle = "30" maxWaitMillis = "10000" longAbandoned = "true" username = "root" password = "root" driverClassName = "com.mysql.cj.jdbc.Driver"
+              url = "jdbc:mysql://localhost:3306/onlinestock?characterEncoding=UTF8&amp;useSSL=false&amp;serverTimezone=GMT%2B8&amp;allowPublicKeyRetrieval=true"/>
+        </Context>
